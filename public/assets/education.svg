@@ -1,0 +1,14 @@
+<svg id="education" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4b70"/>
+      <stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_316" data-name="Ellipse 316" cx="10" cy="10" r="10" transform="translate(246 426)" fill="url(#linear-gradient)"/>
+  <path id="Path_5277" data-name="Path 5277" d="M420.008,133.838l-160-70a10,10,0,0,0-8.016,0L92.062,133.807c-.1.087-6.062,2.425-6.062,9.193v61.72A30.047,30.047,0,0,0,66,233v40a10,10,0,0,0,10,10h40a10,10,0,0,0,10-10V233a30.048,30.048,0,0,0-20-28.28V158.29l60,26.25V253a10,10,0,0,0,5.944,9.141C173.863,262.992,219.372,283,256,283s82.137-20.008,84.056-20.859A10,10,0,0,0,346,253V184.54l74.008-32.378a10,10,0,0,0,0-18.324ZM106,263H86V233a10,10,0,0,1,20,0Zm220-16.678C313.017,251.492,281.276,263,256,263c-25.219,0-57.005-11.514-70-16.682V193.29l65.992,28.872a10,10,0,0,0,8.016,0L326,193.29Zm-70-44.237L120.949,143,256,83.915,391.051,143,256,202.085Z" fill="url(#linear-gradient)"/>
+  <path id="Path_5278" data-name="Path 5278" d="M462,203H376a10,10,0,0,0,0,20h86a10,10,0,0,0,0-20Z" fill="url(#linear-gradient)"/>
+  <path id="Path_5279" data-name="Path 5279" d="M462,243H376a10,10,0,0,0,0,20h86a10,10,0,0,0,0-20Z" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_317" data-name="Ellipse 317" cx="10" cy="10" r="10" transform="translate(246)" fill="url(#linear-gradient)"/>
+  <path id="Path_5280" data-name="Path 5280" d="M502,0H301a10,10,0,0,0,0,20H492V326H20V20H211a10,10,0,0,0,0-20H10A10,10,0,0,0,0,10V396a10,10,0,0,0,10,10H203.937l-16.226,86H156a10,10,0,0,0,0,20H356a10,10,0,0,0,0-20H324.289l-16.226-86H502a10,10,0,0,0,10-10V10A10,10,0,0,0,502,0ZM208.063,492l16.226-86H287.71l16.226,86ZM492,386H20V346H492Z" fill="url(#linear-gradient)"/>
+</svg>

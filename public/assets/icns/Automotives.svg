@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4b70"/>
+      <stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+  </defs>
+  <g id="Automotives" transform="translate(0 0)">
+    <g id="Group_288" data-name="Group 288">
+      <path id="Path_5196" data-name="Path 5196" d="M19.5,21H2.5A2.5,2.5,0,0,1,0,18.5v-1A3.5,3.5,0,0,1,3.5,14H13.85a.5.5,0,0,1,0,1H3.5A2.5,2.5,0,0,0,1,17.5v1A1.5,1.5,0,0,0,2.5,20h17A1.5,1.5,0,0,0,21,18.5v-1a2.466,2.466,0,0,0-.657-1.681.5.5,0,0,1,.735-.679A3.472,3.472,0,0,1,22,17.5v1A2.5,2.5,0,0,1,19.5,21Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_289" data-name="Group 289">
+      <path id="Path_5197" data-name="Path 5197" d="M2,24a2,2,0,0,1-2-2V18.5a.5.5,0,0,1,1,0V22a1,1,0,0,0,2,0V20.5a.5.5,0,0,1,1,0V22A2,2,0,0,1,2,24Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_290" data-name="Group 290">
+      <path id="Path_5198" data-name="Path 5198" d="M20,24a2,2,0,0,1-2-2V20.5a.5.5,0,0,1,1,0V22a1,1,0,0,0,2,0V18.5a.5.5,0,0,1,1,0V22A2,2,0,0,1,20,24Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_291" data-name="Group 291">
+      <path id="Path_5199" data-name="Path 5199" d="M2.5,15a.485.485,0,0,1-.192-.039.5.5,0,0,1-.269-.654l1.99-4.77A2.493,2.493,0,0,1,6.33,8H9.72a.5.5,0,1,1,0,1H6.33a1.512,1.512,0,0,0-1.378.923l-1.99,4.77A.5.5,0,0,1,2.5,15Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_292" data-name="Group 292">
+      <path id="Path_5200" data-name="Path 5200" d="M6.5,18h-3a.5.5,0,0,1,0-1h3a.5.5,0,0,1,0,1Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_293" data-name="Group 293">
+      <path id="Path_5201" data-name="Path 5201" d="M18.5,18h-3a.5.5,0,0,1,0-1h3a.5.5,0,0,1,0,1Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_294" data-name="Group 294">
+      <path id="Path_5202" data-name="Path 5202" d="M18,14a.485.485,0,0,1-.194-.04C17.568,13.861,12,11.454,12,6.536V2.357a.5.5,0,0,1,.34-.474L17.84.026a.5.5,0,0,1,.32,0l5.5,1.857a.5.5,0,0,1,.34.474V6.536c0,4.918-5.568,7.325-5.806,7.425A.5.5,0,0,1,18,14ZM13,2.716v3.82c0,3.785,4.055,5.958,5,6.414.944-.457,5-2.638,5-6.414V2.716L18,1.028Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_295" data-name="Group 295">
+      <path id="Path_5203" data-name="Path 5203" d="M17.5,9h-.028a.5.5,0,0,1-.363-.187l-2-2.5a.5.5,0,1,1,.781-.625l1.651,2.064,3.1-3.105a.5.5,0,0,1,.707.707l-3.5,3.5A.494.494,0,0,1,17.5,9Z" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

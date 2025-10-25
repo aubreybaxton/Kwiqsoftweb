@@ -1,0 +1,20 @@
+<svg id="kotlin-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.395" height="65.395" viewBox="0 0 65.395 65.395">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.168" y1="0.919" x2="0.762" y2="-0.011" gradientUnits="objectBoundingBox">
+      <stop offset="0.108" stop-color="#c757bc"/>
+      <stop offset="0.173" stop-color="#cd5ca9"/>
+      <stop offset="0.492" stop-color="#e8744f"/>
+      <stop offset="0.716" stop-color="#f88316"/>
+      <stop offset="0.823" stop-color="#ff8900"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.319" y1="1.359" x2="0.773" y2="0.456" gradientUnits="objectBoundingBox">
+      <stop offset="0.296" stop-color="#00afff"/>
+      <stop offset="0.694" stop-color="#5282ff"/>
+      <stop offset="1" stop-color="#945dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.024" y1="0.523" x2="0.61" y2="-0.08" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <path id="Path_2749" data-name="Path 2749" d="M32.833,0,0,34.528V65.395L32.786,32.552,65.395,0Z" fill="url(#linear-gradient)"/>
+  <path id="_Path_" data-name="&lt;Path&gt;" d="M0,95.065,32.786,62.222,65.395,95.065Z" transform="translate(0 -29.67)" fill="url(#linear-gradient-2)"/>
+  <path id="Path_2750" data-name="Path 2750" d="M0,0H32.833L0,34.528Z" fill="url(#linear-gradient-3)"/>
+</svg>

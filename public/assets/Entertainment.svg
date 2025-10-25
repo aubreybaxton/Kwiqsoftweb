@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="484.415" viewBox="0 0 512 484.415">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4b70"/>
+      <stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+  </defs>
+  <g id="Entertainment" transform="translate(0 0.001)">
+    <path id="Path_5237" data-name="Path 5237" d="M10.2,204.32a10,10,0,0,0,10-10V38.675A18.7,18.7,0,0,1,38.875,20h434.25A18.7,18.7,0,0,1,491.8,38.675v30.6a10,10,0,0,0,20,0v-30.6A38.722,38.722,0,0,0,473.125,0H38.875A38.722,38.722,0,0,0,.2,38.675V194.32A10,10,0,0,0,10.2,204.32Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5238" data-name="Path 5238" d="M501.8,140.867a10,10,0,0,0-10,10V306.515a18.7,18.7,0,0,1-18.676,18.676H38.875A18.7,18.7,0,0,1,20.2,306.515v-30.6a10,10,0,0,0-20,0v30.6a38.722,38.722,0,0,0,38.676,38.676h434.25A38.722,38.722,0,0,0,511.8,306.515V150.867a10,10,0,0,0-10-10Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5239" data-name="Path 5239" d="M191.945,84.2a10,10,0,0,0-15,8.66V252.328a10,10,0,0,0,15,8.66l138.1-79.734a10,10,0,0,0,0-17.32Zm5,150.813V110.18l108.109,62.414Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5240" data-name="Path 5240" d="M501.8,418.66H174.778v-9.422a36.336,36.336,0,1,0-72.672,0v9.422H10.2a10,10,0,0,0,0,20h91.906v9.418a36.336,36.336,0,1,0,72.672,0V438.66H501.8a10,10,0,0,0,0-20ZM154.778,448.078a16.336,16.336,0,1,1-32.672,0v-38.84a16.336,16.336,0,1,1,32.672,0Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5241" data-name="Path 5241" d="M10.2,245.316A10.2,10.2,0,1,0,0,235.117,10.219,10.219,0,0,0,10.2,245.316Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5242" data-name="Path 5242" d="M501.8,99.871a10.2,10.2,0,1,0,10.2,10.2,10.219,10.219,0,0,0-10.2-10.2Zm0,0" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
