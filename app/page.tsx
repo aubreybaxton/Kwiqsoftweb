@@ -1,13 +1,13 @@
 import Home_carousal from "@/mycomponent/Home_carousal";
-import Navbar from "@/mycomponent/Navbar";
-
+import Home_section2 from "@/mycomponent/Home_section2";
 
 
 export default function Home() {
   return (
-    <div className="">
-      <Navbar/>
+    <div className="bg-white">
+      
       <Home_carousal/>
+      <Home_section2/>
     </div>
   );
 }

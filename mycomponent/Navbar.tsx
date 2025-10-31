@@ -1,11 +1,18 @@
+'use client'
 
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image'
+import { usePathname } from 'next/navigation';
+import { PortfoliosJson, ServicesJson } from '../jsonfile.js'
 
 function Navbar() {
+    const pathname = usePathname()
+    const currentRoute = pathname;
+
+    const IsActive = (path: string) => currentRoute === path;
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-violet-700 shadow-sm px-12 font-sans md:font-serif z-50 fixed top-0 left-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,51 +32,108 @@ function Navbar() {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <Link href={""} className="btn btn-ghost text-xl"><Image src="/assets/favicon_io/favicon.ico" alt="logo" width={40} height={24} /></Link>
+                <Link href={"/"} className={`text-xl pl-8 `}>
+                    <Image src="/assets/wlogo.png" alt="logo" width={80} height={48} />
+                </Link>
             </div>
-            <div className="navbar-center hidden lg:flex text-xl">
+            <div className="navbar-center hidden lg:flex text-xl text-white">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href={""}> Home</Link></li>
-                    <li>
+                    <li className='text-xl'>
+                        <Link href={"/"} className={`text-xl ${IsActive("/") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            }`}> Home</Link>
+                    </li>
+                    <li className='text-xl'>
                         <div className="relative group inline-block">
-                           
-                            <Link href={"/services"} className=' bg-gray-800 text-white rounded'> Services</Link>
+                            <div className={`flex gap-2 items-center ${IsActive("/services") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                                }`}>
+                                <Link href={"/services"} className={`text-white rounded space-x-2 group `}> Services</Link>
+                                <svg
+                                    className="w-4 h-4 transition-transform duration-300 origin-center group-hover:rotate-180"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 p-2 w-4xl bg-white border rounded-lg shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-100">
 
-                            <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 ">
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 1</a>
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 2</a>
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 3</a>
+                                <div className='grid grid-cols-3 gap-0' >
+                                    {ServicesJson?.map((data) => (
+                                        <div className='flex gap-2 p-2 rounded-lg' key={data.category}>
+                                            <div><Image src={data.icon} alt={data.link} width={48} height={24} /></div>
+                                            <div className=''>
+                                                <a href={data.link}
+                                                    className="block text-primary px-4 py-2 hover:bg-primary hover:text-white hover:rounded-lg">
+                                                    {data.category}
+                                                </a>
+                                                {data.services?.map((Submenu) => (
+                                                    <p key={Submenu.title} className='text-black pl-2 text-base text-nowrap'>{Submenu.title}</p>
+                                                ))}
+                                            </div>
+
+                                        </div>
+                                    ))}
+                                </div>
+
                             </div>
                         </div>
-
                     </li>
-                    <li>
-                        <div className="relative group inline-block">
-                            <Link href={""} className=' bg-gray-800 text-white rounded'> Portfolios</Link>
 
-                            <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 ">
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 1</a>
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 2</a>
-                                <a href="#" className="block text-primary px-4 py-2 hover:bg-primary hover:text-white">Item 3</a>
+                    <li className='text-xl'>
+                        <div className="relative group inline-block">
+                            <div className={`flex gap-2 items-center text-white ${IsActive("/portfolios") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                                }`}>
+                                <Link href={"/portfolios"} className={`text-white rounded space-x-2 group `}> Portfolios</Link>
+                                <svg
+                                    className="w-4 h-4 transition-transform duration-300 origin-center group-hover:rotate-180 align-middle"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
                             </div>
-                            
+
+                            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 p-2 w-3xl bg-white border rounded-lg shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-100">
+                                <div className='grid grid-cols-3 gap-4' >
+                                    {PortfoliosJson?.map((data) => (
+                                        <div className='' key={data.title}>
+                                            <Link href={'https://portfolio.kwiqsoft.com/'} className='w-full'>
+                                                <Image src={data.image} alt={data.link} width={200} height={240} />
+                                            </Link>
+                                            <h4 className='text-black pl-2 text-base text-nowrap'>{data.title}</h4>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
 
                         </div>
                     </li>
-                    <li>
-                        <Link href={"/astrology"}>Astrology Website Design</Link>
+                    <li className='text-xl text-white'>
+                        <Link href={"/astrology"} className={`${IsActive("/astrology") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            }`}>Astrology Website Design</Link>
                     </li>
-                    <li>
-                        <Link href={"/tech"}>Tech</Link>
-                    </li>
-                    <li>
-                        <Link href={"/blog"}>Blog</Link>
+                    <li className='text-xl text-white'>
+                        <Link href={"/tech"} className={`${IsActive("/tech") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            }`}>Tech</Link>
+                    </li >
+                    <li className='text-xl text-white'>
+                        <Link href={"/blog"} className={`${IsActive("/blog") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            }`}>Blog</Link>
                     </li>
 
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-outline btn-error">Contact</a>
+                <a className="btn btn-outline btn-error border-2 text-lg text-white">Contact</a>
             </div>
         </div>
     )
