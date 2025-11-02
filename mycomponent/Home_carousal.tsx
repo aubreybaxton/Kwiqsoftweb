@@ -39,7 +39,6 @@ function Home_carousal() {
         <SwiperSlide ><Slide1 /></SwiperSlide>
         <SwiperSlide ><Slide2 /></SwiperSlide>
         <SwiperSlide ><Slide3 /></SwiperSlide>
-        
         <SwiperSlide ><Slide4 /></SwiperSlide>
 
       </Swiper>

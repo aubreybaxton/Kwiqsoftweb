@@ -3,8 +3,11 @@
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image'
+import { roboto } from '@/app/font';
+
 import { usePathname } from 'next/navigation';
 import { PortfoliosJson, ServicesJson } from '../jsonfile.js'
+
 
 function Navbar() {
     const pathname = usePathname()
@@ -12,7 +15,7 @@ function Navbar() {
 
     const IsActive = (path: string) => currentRoute === path;
     return (
-        <div className="navbar bg-violet-700 shadow-sm px-12 font-sans md:font-serif z-50 fixed top-0 left-0">
+        <div className="navbar bg-violet-700 shadow-sm px-12 font-sans md:font-serif z-50 fixed top-0 left-0 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +39,7 @@ function Navbar() {
                     <Image src="/assets/wlogo.png" alt="logo" width={80} height={48} />
                 </Link>
             </div>
-            <div className="navbar-center hidden lg:flex text-xl text-white">
+            <div className={`navbar-center hidden lg:flex text-xl text-white ${roboto.className}`}>
                 <ul className="menu menu-horizontal px-1">
                     <li className='text-xl'>
                         <Link href={"/"} className={`text-xl ${IsActive("/") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"

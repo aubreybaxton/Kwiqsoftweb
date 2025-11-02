@@ -105,4 +105,31 @@ export const PortfoliosJson=[
       "title": "Christie Dowson - Fitness trainer"
     }
   ]
+
+export const Homecards= [
+    {
+      "background": "bg-blue-500",
+      "image": "assets/dis.svg",
+      "title": "Discover",
+      "description": "We shape brands through exploration, applying in-depth research to challenge assumptions at every turn."
+    },
+    {
+      "background": "#D4FFDD",
+      "image": "assets/des.svg",
+      "title": "Design",
+      "description": "Our design approach is to simplify. We love the joy in creating something unique that is easy for end users."
+    },
+    {
+      "background": "#FFE4E3",
+      "image": "assets/bui.svg",
+      "title": "Develop",
+      "description": "Using modern technologies, we build with efficiency and skill, creating flexible business-driven solutions."
+    },
+    {
+      "background": "#F8E3F6",
+      "image": "assets/del.svg",
+      "title": "Deliver",
+      "description": "We take an iterative approach to both our work and our practice, for ways to improve what we do."
+    }
+  ]
   

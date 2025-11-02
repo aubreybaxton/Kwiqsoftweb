@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { poppins } from '@/app/font';
 
 function Slide1() {
     return (
         <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
             <div className='m-4 ' >
-                <div className='text-6xl' data-aos="fade-right">Digital Marketing</div>
+                <div className={`text-6xl ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     The right digital marketing solutions can take your business to new heights. Our digital marketing strategy includes content marketing, SEO, social media campaign and more.
                 </div>
@@ -139,7 +140,7 @@ function Slide2() {
 
         <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
             <div>
-                <div className='text-6xl' data-aos="fade-left">Mobile App Development</div>
+                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">Mobile App Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     We are dedicated to developing industry-specific digital environment for innovative and future-ready apps for diverse brands, organizations, startups, and individuals.
                 </div>
@@ -490,7 +491,7 @@ function Slide3() {
 
         <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
             <div>
-                <div className='text-6xl' data-aos="fade-left">Web Development</div>
+                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">Web Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     We provide customized and need-based solutions for E-Commerce, Dynamic or Static Websites. Powerful, flexible, customizable, responsive, affordable, launch in record time.
 
@@ -535,7 +536,7 @@ function Slide3() {
                             <path id="Path_4335" data-name="Path 4335" d="M537.1,92.17H376.8l-7.29,32.53H544.386Z" transform="translate(152.879 -4.282)" fill="#ebebeb"></path>
                             <path id="Path_6203" data-name="Path 6203" d="M.29.031,1.833,0l-.29,14.21L0,14.241Z" transform="translate(726.049 101.913) rotate(-45)" fill="#dbdbdb"></path>
                             <path id="Path_6204" data-name="Path 6204" d="M0,0,1.544.031l.29,14.21L.29,14.21Z" transform="translate(736.103 100.741) rotate(45)" fill="#dbdbdb"></path>
-                            <rect id="Rectangle_348" data-name="Rectangle 348" width="344.323" height="48.926" transform="translate(415.601 431.433)" fill="#fff" stroke="#c7c7c7" stroke-miterlimit="10" strokeWidth="1"></rect>
+                            <rect id="Rectangle_348" data-name="Rectangle 348" width="344.323" height="48.926" transform="translate(415.601 431.433)" fill="#fff" stroke="#c7c7c7" strokeMiterlimit="10" strokeWidth="1"></rect>
                             <rect id="Rectangle_349" data-name="Rectangle 349" width="46.99" height="48.926" transform="translate(712.953 431.433)" fill="#7c4dff"></rect>
                             <path id="Path_4336" data-name="Path 4336" d="M471.675,299.547l-4.336,3.53-8-11.159-2.97-4.023a6.621,6.621,0,0,0,1.676-.987,7.241,7.241,0,0,0,2.223-3.018l3.134,4.289Z" transform="translate(279.649 170.07)" fill="#fff"></path>
                             <path id="Path_4337" data-name="Path 4337" d="M469.676,280.719a11.532,11.532,0,0,0-16.076-2.694,12.655,12.655,0,0,0-3.464,16.572,11.585,11.585,0,0,0,15.7,4.512,13.175,13.175,0,0,0,1.64-1.1,12.346,12.346,0,0,0,2.46-2.657,12.751,12.751,0,0,0-.255-14.632ZM464.575,294a6.619,6.619,0,0,1-1.676.987,6.936,6.936,0,0,1-8.569-2.8,7.613,7.613,0,0,1,.952-9.3,6.876,6.876,0,0,1,8.944-.86,7.558,7.558,0,0,1,2.572,8.964,7.251,7.251,0,0,1-2.223,3.093Z" transform="translate(273.121 162.879)" fill="#fff"></path>
@@ -891,7 +892,7 @@ function Slide4() {
 
         <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
             <div>
-                <div className='text-6xl' data-aos="fade-left">UI & UX Design</div>
+                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">UI & UX Design</div>
                 <div className='text-xl p-4' data-aos="fade-right">
 
                     When brands are fighting for the user’s screen space, we take a creative approach to stand out. Our UX UI design solution is planned to solve the user problem.
@@ -937,7 +938,7 @@ function Slide4() {
                             <path id="Path_4335" data-name="Path 4335" d="M537.1,92.17H376.8l-7.29,32.53H544.386Z" transform="translate(152.879 -4.282)" fill="#ebebeb"></path>
                             <path id="Path_6203" data-name="Path 6203" d="M.29.031,1.833,0l-.29,14.21L0,14.241Z" transform="translate(726.049 101.913) rotate(-45)" fill="#dbdbdb"></path>
                             <path id="Path_6204" data-name="Path 6204" d="M0,0,1.544.031l.29,14.21L.29,14.21Z" transform="translate(736.103 100.741) rotate(45)" fill="#dbdbdb"></path>
-                            <rect id="Rectangle_348" data-name="Rectangle 348" width="344.323" height="48.926" transform="translate(415.601 431.433)" fill="#fff" stroke="#c7c7c7" stroke-miterlimit="10" strokeWidth="1"></rect>
+                            <rect id="Rectangle_348" data-name="Rectangle 348" width="344.323" height="48.926" transform="translate(415.601 431.433)" fill="#fff" stroke="#c7c7c7" strokeMiterlimit="10" strokeWidth="1"></rect>
                             <rect id="Rectangle_349" data-name="Rectangle 349" width="46.99" height="48.926" transform="translate(712.953 431.433)" fill="#7c4dff"></rect>
                             <path id="Path_4336" data-name="Path 4336" d="M471.675,299.547l-4.336,3.53-8-11.159-2.97-4.023a6.621,6.621,0,0,0,1.676-.987,7.241,7.241,0,0,0,2.223-3.018l3.134,4.289Z" transform="translate(279.649 170.07)" fill="#fff"></path>
                             <path id="Path_4337" data-name="Path 4337" d="M469.676,280.719a11.532,11.532,0,0,0-16.076-2.694,12.655,12.655,0,0,0-3.464,16.572,11.585,11.585,0,0,0,15.7,4.512,13.175,13.175,0,0,0,1.64-1.1,12.346,12.346,0,0,0,2.46-2.657,12.751,12.751,0,0,0-.255-14.632ZM464.575,294a6.619,6.619,0,0,1-1.676.987,6.936,6.936,0,0,1-8.569-2.8,7.613,7.613,0,0,1,.952-9.3,6.876,6.876,0,0,1,8.944-.86,7.558,7.558,0,0,1,2.572,8.964,7.251,7.251,0,0,1-2.223,3.093Z" transform="translate(273.121 162.879)" fill="#fff"></path>
