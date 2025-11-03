@@ -1,4 +1,5 @@
 import React from 'react';
+import AOSinit from './Aosinit';
 import { poppins } from '@/app/font';
 
 function Slide1() {

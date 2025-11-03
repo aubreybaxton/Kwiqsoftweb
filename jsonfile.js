@@ -132,4 +132,62 @@ export const Homecards= [
       "description": "We take an iterative approach to both our work and our practice, for ways to improve what we do."
     }
   ]
+
+export const ServiceCards=[
+  {
+    "title": "Web Development",
+    "image": "/assets/card1_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "Mobile Apps",
+    "image": "/assets/card2_icn.svg",
+    "description": "We provide potential mobile apps to our users with everything they are looking for. Unique and smart features can help your business in different segments to grab never-ending opportunities.",
+    "link": "/services"
+  },
+  {
+    "title": "UI/UX Design",
+    "image": "/assets/card3_icn.svg",
+    "description": "We are a team to build unique and innovative mobile app designs that are immersive, innovative, and scalable, which deliver a desired output to the startups and enterprise.",
+    "link": "/services"
+  },
+  {
+    "title": "Digital Marketing",
+    "image": "/assets/card4_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "E-Commerce Apps",
+    "image": "/assets/card5_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "Branding",
+    "image": "/assets/card6_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "Chat-Bot Services",
+    "image": "/assets/card7_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "SEO Services",
+    "image": "/assets/card8_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  },
+  {
+    "title": "Custom Softwares",
+    "image": "/assets/card9_icn.svg",
+    "description": "We Offer Comprehensive And End-To-End Solutions For Your Web Development Projects. Our 100% Accurately Programmed Web Applications Fit Perfectly To Your Business Requirements.",
+    "link": "/services"
+  }
+]
+
   
