@@ -114,29 +114,36 @@ function Home_section2() {
             </div>
 
             {/* page4 */}
-            <div className='h-screen bg-white text-black' >
+            <div className='h-full bg-white text-black py-5' >
                 <div className='flex items-center gap-5 justify-center pt-18'>
                     <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
                     <div className='text-5xl'> Our Services </div>
                     <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
                 </div>
-                <div className='text-xl text-center mt-6 px-18'>
+                <div className='text-xl text-center my-12 px-18'>
                     We design and implement advanced custom software solutions and mobile apps to simplify your business problems. With our latest technology focus, agile methodology combined with cost effective digital solutions.
 
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 m-12" >
                     {ServiceCards?.map((card) => (
                         <div
                             key={card.title}
-                            className="group perspective:distant bg-white shadow-2xl p-6 rounded-xl text-center  "
+                            className="group [perspective:1000px] transition-transform 
+                            duration-700 text-center hover:rounded-xl h-60 "
                         >
-                            <div className='relative group-hover:transform-[rotateY(180deg)] transform transition hover:scale-105 hover:shadow-3xl'>
-                                <div className='absolute backface-hidden h-full'>
-                                    <Image src={card.image} alt={card.title} width={64} height={64} />
+                            <div className='relative bg-white shadow-2xl p-6 rounded-xl 
+                            group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]
+                             transition-transform hover:scale-105 hover:shadow-3xl h-full'>
+
+                                {/* Front card */}
+                                <div className='absolute flex flex-col items-center justify-center inset-0 [backface-visibility:hidden] h-full'>
+                                    <Image src={card.image} alt={card.title} width={124} height={84} />
                                     <h2 className="text-2xl font-semibold my-4">{card.title}</h2>
                                 </div>
-                                <div className='absolute text-gray-600 backface-hidden h-full'>
+                                {/* Back card */}
+                                <div className='absolute flex flex-col items-center justify-center px-8 inset-0 text-red-500 [transform:rotateY(180deg)] [backface-visibility:hidden] h-full'>
+                                    <h2 className="text-2xl font-semibold my-4">{card.title}</h2>
                                     <p className="">{card.description}</p>
                                     <Link href={card.link} className="text-violet-600 font-medium mt-4 inline-block">
                                         Learn More →
@@ -146,6 +153,8 @@ function Home_section2() {
                         </div>
                     ))}
                 </div>
+
+
 
             </div>
 
