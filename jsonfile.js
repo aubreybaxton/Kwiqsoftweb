@@ -190,4 +190,66 @@ export const ServiceCards=[
   }
 ]
 
+export const IndustryCard=[
+  {
+    "icon": "assets/icns/education.svg",
+    "name": "Education & E-Learning"
+  },
+  {
+    "icon": "assets/icns/Travel.svg",
+    "name": "Travel & Hospitality"
+  },
+  {
+    "icon": "assets/icns/Healthcare.svg",
+    "name": "Healthcare"
+  },
+  {
+    "icon": "assets/icns/ecommerce.svg",
+    "name": "Retail & E-Commerce"
+  },
+  {
+    "icon": "assets/icns/Food.svg",
+    "name": "Food & Beverage"
+  },
+  {
+    "icon": "assets/icns/Entertainment.svg",
+    "name": "Entertainment & Media"
+  },
+  {
+    "icon": "assets/icns/Banking.svg",
+    "name": "Banking & Finance"
+  },
+  {
+    "icon": "assets/icns/Construction.svg",
+    "name": "Construction"
+  },
+  {
+    "icon": "assets/icns/Sports.svg",
+    "name": "Sports & Gaming"
+  },
+  {
+    "icon": "assets/icns/network.svg",
+    "name": "Social Networking"
+  },
+  {
+    "icon": "assets/icns/Housing.svg",
+    "name": "Real Estate & Housing"
+  },
+  {
+    "icon": "assets/icns/Enterprise.svg",
+    "name": "Enterprise & Business"
+  },
+  {
+    "icon": "assets/icns/tickets.svg",
+    "name": "Events & Ticketing"
+  },
+  {
+    "icon": "assets/icns/Portal.svg",
+    "name": "B2B/B2C Portal"
+  },
+  {
+    "icon": "assets/icns/Automotives.svg",
+    "name": "Automotives"
+  }
+]
   

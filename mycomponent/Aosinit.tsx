@@ -6,14 +6,12 @@ import { useEffect } from "react";
 
 const AOSinit = () => {
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            AOS.init({
-                once: false,
-                offset: 100,
-                duration: 1000,
-                easing: "ease",
-            });
-        }
+        AOS.init({
+            once: false,
+            offset: 100,
+            duration: 1000,
+            easing: "ease",
+        });
     }, []);
 
     return null;

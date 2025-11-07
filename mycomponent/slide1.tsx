@@ -4,15 +4,15 @@ import { poppins } from '@/app/font';
 
 function Slide1() {
     return (
-        <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
-            <div className='m-4 ' >
-                <div className={`text-6xl ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
+        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+            <div className='m-4 text-white' >
+                <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     The right digital marketing solutions can take your business to new heights. Our digital marketing strategy includes content marketing, SEO, social media campaign and more.
                 </div>
             </div>
             <div className='items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="677.597" height="680.592" viewBox="0 0 777.597 680.592">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 777.597 680.592">
                     <g id="digi_mar" transform="translate(-27.5 -23.89)" data-aos="fade-left">
                         <g id="freepik--background-complete--inject-78" transform="translate(58.734 23.89)" data-aos="fade-left">
                             <path id="Path_6209" data-name="Path 6209" d="M154.273,162.3h0a52.223,52.223,0,0,1-52.223-52.223h0A52.223,52.223,0,0,1,154.273,57.85h0A52.223,52.223,0,0,1,206.5,110.073h0A52.223,52.223,0,0,1,154.273,162.3Z" transform="translate(-19.645 -6.084)" fill="#7c4dff"></path>
@@ -139,15 +139,15 @@ function Slide1() {
 function Slide2() {
     return (
 
-        <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
-            <div>
-                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">Mobile App Development</div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+            <div className='m-4 text-white'>
+                <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">Mobile App Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     We are dedicated to developing industry-specific digital environment for innovative and future-ready apps for diverse brands, organizations, startups, and individuals.
                 </div>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="677" height="742.99" viewBox="0 0 477 442.99">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 477 442.99">
                     <g id="pana1" transform="translate(-37.5 -21.73)">
                         <g id="freepik--background-complete--inject-144" data-aos="fade-left">
                             <path id="Path_4942" data-name="Path 4942" d="M94.25,162.32h-4a3.16,3.16,0,0,0-1.22.13,1.95,1.95,0,0,0-1.19,1.5,3.42,3.42,0,0,0,0,.72v.74a3.36,3.36,0,0,1-.05.77,2,2,0,0,1-.9,1.3,1.87,1.87,0,0,1-.8.28H70.46a2.29,2.29,0,0,1-.58-.06,1.88,1.88,0,0,1-1-.62,2,2,0,0,1-.49-1.09v-1.22a3.18,3.18,0,0,0-.12-1.19,1.88,1.88,0,0,0-1.89-1.26H57a6.39,6.39,0,0,0-2.72.51A6.46,6.46,0,0,0,52,164.55a6.21,6.21,0,0,0-1.28,2.58c-.06.24-.08.49-.12.73a3.207,3.207,0,0,0,0,.62V268a6.15,6.15,0,0,0,2.65,5.27,6.43,6.43,0,0,0,4,1.09H97.91a6.13,6.13,0,0,0,3.51-1.36,6.271,6.271,0,0,0,1.27-1.4,5.93,5.93,0,0,0,.77-1.7,6.44,6.44,0,0,0,.24-1.85V168.7a6.4,6.4,0,0,0-.45-2.5,6,6,0,0,0-1.18-1.85,5.85,5.85,0,0,0-1.41-1.15,5.93,5.93,0,0,0-2.32-.82,1.8,1.8,0,0,1-.63-.06H94.25Z" fill="#fafafa"></path>
@@ -490,16 +490,16 @@ function Slide2() {
 function Slide3() {
     return (
 
-        <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
-            <div>
-                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">Web Development</div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+            <div className='m-4 text-white'>
+                <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">Web Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     We provide customized and need-based solutions for E-Commerce, Dynamic or Static Websites. Powerful, flexible, customizable, responsive, affordable, launch in record time.
 
                 </div>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="727.269" height="1112.561" viewBox="0 0 1327.269 1112.561">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 1327.269 1112.561">
                     <g id="web_dev2" transform="translate(146.557 -44.69)">
                         <g id="freepik--background-complete--inject-113" transform="translate(-78.396 44.69)">
                             <path id="Path_4307" data-name="Path 4307" d="M329.879,222.878H99.14V58.45H329.879Zm-228.917-1.9h227.1V60.348h-227.1Z" transform="translate(-13.997 -32.336)" fill="#ebebeb"></path>
@@ -891,9 +891,9 @@ function Slide3() {
 function Slide4() {
     return (
 
-        <div className='grid grid-cols-2 gap-5 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
-            <div>
-                <div className={`text-6xl ${poppins.className}`} data-aos="fade-left">UI & UX Design</div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+            <div className='m-4 text-white'>
+                <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">UI & UX Design</div>
                 <div className='text-xl p-4' data-aos="fade-right">
 
                     When brands are fighting for the user’s screen space, we take a creative approach to stand out. Our UX UI design solution is planned to solve the user problem.
@@ -901,7 +901,7 @@ function Slide4() {
                 </div>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="727.269" height="1112.561" viewBox="0 0 1327.269 1112.561">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 1327.269 1112.561">
                     <g id="web_dev2" transform="translate(146.557 -44.69)">
                         <g id="freepik--background-complete--inject-113" transform="translate(-78.396 44.69)">
                             <path id="Path_4307" data-name="Path 4307" d="M329.879,222.878H99.14V58.45H329.879Zm-228.917-1.9h227.1V60.348h-227.1Z" transform="translate(-13.997 -32.336)" fill="#ebebeb"></path>
