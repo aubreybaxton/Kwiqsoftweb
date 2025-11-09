@@ -1,7 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { Homecards, IndustryCard, ServiceCards } from '@/jsonfile';
+import { Homecards, IndustryCard, ServiceCards, TabCards } from '@/jsonfile';
+import TabSection from './TabSection';
+import Testimonial from './Testimonial';
+
+
 
 function Home_section2() {
     return (
@@ -165,24 +169,24 @@ function Home_section2() {
                 </div>
                 <div className='flex relative justify-center h-[75vh]'>
                     <div className='relative w-200  h-full '>
-                        <div className= 'absolute top-0 bg-red-500 p-4 rounded-tl-4xl w-100 h- m-2 z-10 hover:scale-125 transition-all duration-500 hover:rounded-4xl'>
-                            <Image src={'/assets/h_port1.png'} alt='image' width={400} height={100}  />
+                        <div className='absolute top-0 bg-red-500 p-4 rounded-tl-4xl w-100 h- m-2 z-10 hover:scale-125 transition-all duration-500 hover:rounded-4xl'>
+                            <Image src={'/assets/h_port1.png'} alt='image' width={400} height={100} />
                         </div>
                         <div className='absolute top-10 left-90 bg-red-500 p-4 rounded-br-4xl w-90 m-2 z-11 
                         hover:scale-125 transition-all duration-500 hover:rounded-4xl' >
                             <Image src={'/assets/h_port2.png'} alt='' width={350} height={80} />
-                            </div>
+                        </div>
                         <div className='absolute top-30 left-30 bg-red-500 p-4 rounded-t-4xl w-100 m-2 z-11
                          hover:scale-125 transition-all duration-500 hover:rounded-4xl'>
                             <Image src={'/assets/h_port3.png'} alt='' width={350} height={70} /></div>
                         <div className='absolute top-60 left-10 bg-red-500 p-4 rounded-s-4xl w-100 m-2 z-11 
                         hover:scale-125 transition-all duration-500 hover:rounded-4xl'>
                             <Image src={'/assets/h_port2.png'} alt='' width={350} height={100} />
-                            </div>
+                        </div>
                         <div className='absolute top-80 left-60 bg-red-500 p-4 rounded-br-4xl w-120 m-2 z-11
                          hover:scale-125 transition-all duration-500 hover:rounded-4xl'>
                             <Image src={'/assets/h_port2.png'} alt='' width={450} height={100} />
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,34 +222,36 @@ function Home_section2() {
             </div>
 
             {/* page 7 */}
-            <div className='h-full bg-white text-black py-5' >
-                <div className='flex items-center gap-5 justify-center pt-18'>
-                    <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
-                    <div className='text-5xl'> Industries </div>
-                    <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
-                </div>
-                <div className='text-xl text-center my-12 px-18'>
-                    We offer a multitude of technology solutions, that drive efficiency and productivity to keep your business always one step ahead from the rest.
+            <TabSection />
 
-                </div>
+            {/* page 8 */}
+            <div className='h-screen flex items-center justify-center bg-white text-black ' >
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 m-12" >
-                    {IndustryCard?.map((card) => (
-                        <div
-                            key={card.name}
-                            className=" text-center hover:rounded-xl h-60 "
-                        >
-                            <div className='flex flex-col items-center justify-center text-center'>
-                                <Image src={card.icon} alt={card.name} width={124} height={84} />
-                                <h2 className="text-2xl font-semibold my-4">{card.name}</h2>
+                <div className='flex items-center justify-center'>
+                    <div className='relative pt-18  px-18 z-20'>
+                        <div className='z-10'>
+                            <Image className='absolute ' src={"/assets/Repeat8.svg"} alt="rightImages" width={200} height={100} />
+                        </div>
+                        <div className='relative z-20'>
+                            <div className='text-5xl '> We Promise, We Deliver. </div>
+                            <div className='text-xl my-12 '>
+                                Work with us and see how it goes. We promise to go the extra
+                                mile for every project that we take onboard !!
+
                             </div>
                         </div>
-                    ))}
+                        <button type='button' className='bg-rose-600 hover:bg-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 py-2 px-4 rounded-lg text-white'> Get Started</button>
+                    </div>
+                    <div className="w-1/2 pt-12 bg-center bg-cover" >
+                        <Image src={"/assets/business_deal.svg"} alt="rightImages" width={500} height={100} className='mx-auto' />
+                    </div>
+
                 </div>
 
-
-
             </div>
+
+            {/* page 8 */}
+            <Testimonial/>
 
         </div>
 
