@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import { Slide1, Slide2, Slide3, Slide4 } from "./slide1";
+import FloatingSquaresBackground from "./bgStyle";
 
 
 
@@ -14,8 +15,8 @@ function Home_carousal() {
 
   return (
 
-    <div className='top-18 '>
-      <Swiper className="mySwiper"
+    <section className=' h-screen'>
+      <Swiper className="mySwiper "
         modules={[Autoplay, Pagination]}
         spaceBetween={12}
         slidesPerView={1}
@@ -36,13 +37,30 @@ function Home_carousal() {
           }
         }}
       >
-        <SwiperSlide ><Slide1 /></SwiperSlide>
-        <SwiperSlide ><Slide2 /></SwiperSlide>
-        <SwiperSlide ><Slide3 /></SwiperSlide>
-        <SwiperSlide ><Slide4 /></SwiperSlide>
+        <SwiperSlide >
+          <FloatingSquaresBackground>
+            <Slide1 />
+          </FloatingSquaresBackground>
+
+        </SwiperSlide>
+        <SwiperSlide >
+          <FloatingSquaresBackground>
+            <Slide2 />
+          </FloatingSquaresBackground>
+        </SwiperSlide>
+        <SwiperSlide >
+          <FloatingSquaresBackground>
+            <Slide3 />
+          </FloatingSquaresBackground>
+        </SwiperSlide>
+        <SwiperSlide >
+          <FloatingSquaresBackground>
+            <Slide4 />
+          </FloatingSquaresBackground>
+        </SwiperSlide>
 
       </Swiper>
-    </div>
+    </section>
   )
 }
 

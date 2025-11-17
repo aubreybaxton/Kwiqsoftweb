@@ -1,0 +1,61 @@
+.floating-bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: linear-gradient(to bottom right, #340569, #861cff);
+  overflow: hidden;
+}
+
+/* Base square style */
+.floating-bg .sq {
+  position: absolute;
+  background: #861cff;
+  border-radius: 7px;
+  opacity: 0.3;
+  transition: transform 0.2s ease-out;
+  z-index: 0;
+}
+
+/* Square positions */
+.floating-bg .sq1 {
+  width: 100px;
+  height: 100px;
+  left: 180px;
+  top: 100px;
+}
+
+.floating-bg .sq2 {
+  width: 80px;
+  height: 80px;
+  left: 240px;
+  top: 160px;
+  opacity: 0.2;
+}
+
+.floating-bg .sq3 {
+  width: 110px;
+  height: 110px;
+  right: 390px;
+  top: 270px;
+  opacity: 0.2;
+}
+
+.floating-bg .sq4 {
+  width: 110px;
+  height: 110px;
+  right: 290px;
+  top: 170px;
+  opacity: 0.2;
+}
+.floating-bg .sq5 {
+  width: 80px;
+  height: 80px;
+  left: 170px;
+  bottom: 350px;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  padding: 160px 0;
+}

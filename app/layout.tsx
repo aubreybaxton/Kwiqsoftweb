@@ -5,6 +5,7 @@ import "./globals.css";
 
 import Navbar from "@/mycomponent/Navbar";
 import AOSinit from '@/mycomponent/Aosinit';
+import Footer from "@/mycomponent/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar/>
         <AOSinit/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

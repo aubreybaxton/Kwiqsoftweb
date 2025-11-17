@@ -329,3 +329,156 @@ export const TabCards = [
 ]
 
 
+export const AstrologyCard = [
+  {
+    "title": "Contact Us",
+    "cover_image": "/assets/talk-1.png",
+    "avatar": "/assets/callicon.png",
+    "description": "+91 931-992-4798",
+    "width":"80",
+    "actions": {
+      "phone": "+919319924798",
+      "label": "Call Now",
+      "link": "tel:+919319924798"
+    }
+  },
+  {
+    "title": "On WhatsApp",
+    "cover_image": "/assets/wts.png",
+    "avatar": "/assets/whatsappIcon.png",
+    "description": "Get your website!",
+    "width":"40",
+    "actions": {
+      "phone": "+919319924798",
+      "label": "Chat Now",
+      "link": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello%20KWIQSOFT,%20I%20want%20website%20design%20&app_absent=0"
+
+    }
+  },
+  {
+    "title": "Alternate Contact",
+    "cover_image": "/assets/talk-2.png",
+    "avatar": "/assets/callicon.png",
+    "description": "+91 931-198-0594",
+    "width":"80",
+    "actions": {
+      "phone": "+919311980594",
+      "label": "Call Now",
+      "link": "tel:+919311980594"
+    }
+  }
+]
+
+export const ServicesSection= [
+  {
+    "title": "Mobile Apps Development",
+    "image": "assets/leftmob.svg",
+    "description": "Our mobile application development services starts with strategic mobile consulting, which helps startups and enterprises to choose the right platform for app development. To meet diverse requirements of different business, we offer bespoke and full-stack services from app development to support and maintenance. In mobile app development, we offer:",
+    "offerings": [
+      "Native Android App Development",
+      "Cross-Platform App Development",
+      "Hybrid App Development",
+      "React Native App Development",
+      "Ionic App Development"
+    ]
+  },
+  {
+    "title": "Web Development",
+    "image": "assets/web.svg",
+    "description": "We understand the need for scalable solutions for simplifying complex business challenges. While designing and developing Web Apps we adopt a collaborative approach and develop web apps that are secure, convenient to use, feature-rich and interactive. From concept to reality, we’ll make this an enjoyable and memorable journey for you. In Web Development, we offer:",
+    "offerings": [
+      "Custom Website Development",
+      "Responsive Web Apps",
+      "Web CMS Development",
+      "E-Commerce Development",
+      "Full-Stack Development"
+    ]
+  },
+  {
+    "title": "UI/UX Design",
+    "image": "assets/uiux.svg",
+    "description": "UI/UX design is the catalyst behind the success of any web or mobile app. Creative attractive, engaging and usable interfaces are the soul of any designs. We will help design custom user interfaces based on your business requirements for any of your device platforms, including mobile apps, tablets and desktops. In UI/UX Design, we Offer:",
+    "offerings": [
+      "Mobile App Design",
+      "Responsive Web Design",
+      "Wireframe Design",
+      "High/Low fidelity Prototype",
+      "UI Designs"
+    ]
+  },
+  {
+    "title": "Digital Marketing",
+    "image": "assets/digi.svg",
+    "description": "Developing a long-term and reliable marketing strategy that will flourish and live a longer life, while ensuring your customers stay with you and tell the world the tales of your business’s awesomeness transforming our custom-made business strategies into real time success. In Digital Marketing, we Offer:",
+    "offerings": [
+      "Social Media Marketing",
+      "Search Engine Optimization",
+      "Email Marketing",
+      "Mobile App Marketing",
+      "Pay Per Click Marketing"
+    ]
+  },
+  {
+    "title": "Branding",
+    "image": "assets/brand.svg",
+    "description": "Crafting a brand identity for your business that will convey your intention, goals and all that you intend to do for your audience - embedded inside a single design - connecting your business with your customers. In Branding, we Offer:",
+    "offerings": [
+      "Logo Design",
+      "Presentation design",
+      "Packaging & Product Design",
+      "Brand Naming",
+      "Poster Design"
+    ]
+  },
+  {
+    "title": "Quality Assurance & Testing",
+    "image": "assets/testing.svg",
+    "description": "Quality Assurance and testing are the primary concern of every business owner. Various mobile applications, websites, and software fail to get the attention of users due to proper testing and quality assurance. Basically, quality assurance and testing are used to check whether a product or service meets specified requirements. In Quality Assurance & Testing, we Offer:",
+    "offerings": [
+      "Web App Testing",
+      "Mobile App Testing",
+      "Performance Testing",
+      "Device Compatibility",
+      "Functionality & Usability Testing"
+    ]
+  }
+]
+
+export const ServicesStep=[
+  {
+    "title": "Idea",
+    "image": "assets/bubb.svg",
+    "description": "Developing, collecting, and analyzing all the requirements.",
+    "decoration": "assets/dots3.svg"
+  },
+  {
+    "title": "Design",
+    "image": "assets/bubb2.svg",
+    "description": "Build the architecture of the product & create DB Design.",
+    "decoration": "assets/dots3.svg"
+  },
+  {
+    "title": "Development",
+    "image": "assets/bubb3.svg",
+    "description": "Product divided into different modules and units for development",
+    "decoration": "assets/dots3.svg"
+  },
+  {
+    "title": "Testing",
+    "image": "assets/bubb4.svg",
+    "description": "Check issues until the product finally meets the original specifications.",
+    "decoration": "assets/dots3.svg"
+  },
+  {
+    "title": "Launch",
+    "image": "assets/bubb5.svg",
+    "description": "Now, the product is deploy & delivered to the customers to be used.",
+    "decoration": "assets/dots3.svg"
+  },
+  {
+    "title": "Support",
+    "image": "assets/bubb6.svg",
+    "description": "After the product is released, it should be maintained when needed.",
+    "decoration": "assets/dots3.svg"
+  }
+]

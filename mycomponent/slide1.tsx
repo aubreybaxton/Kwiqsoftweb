@@ -4,7 +4,7 @@ import { poppins } from '@/app/font';
 
 function Slide1() {
     return (
-        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen  '>
             <div className='m-4 text-white' >
                 <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
                 <div className='text-xl p-4' data-aos="fade-right">
@@ -139,7 +139,7 @@ function Slide1() {
 function Slide2() {
     return (
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen '>
             <div className='m-4 text-white'>
                 <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">Mobile App Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
@@ -490,7 +490,7 @@ function Slide2() {
 function Slide3() {
     return (
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen '>
             <div className='m-4 text-white'>
                 <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">Web Development</div>
                 <div className='text-xl p-4' data-aos="fade-right">
@@ -891,7 +891,7 @@ function Slide3() {
 function Slide4() {
     return (
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen bg-gradient-to-b from-[#340569] to-[#861cff]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen '>
             <div className='m-4 text-white'>
                 <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-left">UI & UX Design</div>
                 <div className='text-xl p-4' data-aos="fade-right">

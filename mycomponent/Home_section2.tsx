@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Homecards, IndustryCard, ServiceCards, TabCards } from '@/jsonfile';
 import TabSection from './TabSection';
 import Testimonial from './Testimonial';
+import Industry from './Industry';
+import Contactus from './contactus';
 
 
 
@@ -191,35 +193,7 @@ function Home_section2() {
                 </div>
             </div>
             {/* page 6 */}
-            <div className='h-full bg-white text-black py-5' >
-                <div className='flex items-center gap-5 justify-center pt-18'>
-                    <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
-                    <div className='text-5xl'> Industries </div>
-                    <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
-                </div>
-                <div className='text-xl text-center my-12 px-18'>
-                    We offer a multitude of technology solutions, that drive efficiency and productivity to keep your business always one step ahead from the rest.
-
-                </div>
-
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 m-12" >
-                    {IndustryCard?.map((card) => (
-                        <div
-                            key={card.name}
-                            className=" text-center hover:rounded-xl h-60 "
-                        >
-                            <div className='flex flex-col items-center justify-center text-center'>
-                                <Image src={card.icon} alt={card.name} width={124} height={84} />
-                                <h2 className="text-2xl font-semibold my-4">{card.name}</h2>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-
-
-            </div>
+            <Industry />
 
             {/* page 7 */}
             <TabSection />
@@ -251,7 +225,11 @@ function Home_section2() {
             </div>
 
             {/* page 8 */}
-            <Testimonial/>
+            <Testimonial />
+
+            {/* page 9 */}
+
+            <Contactus />
 
         </div>
 
