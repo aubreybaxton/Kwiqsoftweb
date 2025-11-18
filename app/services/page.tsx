@@ -4,12 +4,14 @@ import Image from 'next/image';
 import { ServicesSection, ServicesStep } from '@/jsonfile';
 import Industry from '@/mycomponent/Industry';
 import Contactus from '@/mycomponent/contactus';
+import FloatingSquaresBackground from '@/mycomponent/bgStyle';
 
 function Services() {
   return (
     <div className='bg-white' >
-      <section className='flex pt-50 text-white bg-gradient-to-b from-[#340569] to-[#861cff] px-12'>
-        <div>
+      <FloatingSquaresBackground>
+      <section className='flex pt-50 text-white px-12'>
+        <div className='flex-1'>
           <div className='text-4xl'>
             Services
           </div>
@@ -17,10 +19,11 @@ function Services() {
             We help our partners accelerate disruption both within their organizations and industries.They strategize new ideas and obtain real business value by getting the most out of our production-ready custom software development services. Talk to our experts today!
           </div>
         </div>
-        <div>
+        <div className='flex-1 bg-center'>
           <Image src={'assets/ser_vec.svg'} alt='cross' height={200} width={450} />
         </div>
       </section>
+      </FloatingSquaresBackground>
       <section className='h-80 p-12'>
         <div className='text-center text-black text-5xl p-16 border-y-4 border-violet-200'> Our Services</div>
       </section>
