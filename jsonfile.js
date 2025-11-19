@@ -482,3 +482,23 @@ export const ServicesStep=[
     "decoration": "assets/dots3.svg"
   }
 ]
+
+export const AstrologyWebCards=[
+  {
+    "image": "/assets/exp-dev.png",
+    "title": "Proficiency with web technologies",
+    "description": "We have gained the trust of more than 200+ astrologers in more than 22+ countries worldwide thanks to our expert knowledge of various development platforms and designing software, branding, advertising, video products, search engine optimisation seo, Google AdWords ppc, digital marketing, and website and mobile app development solutions."
+  },
+  {
+    "image": "/assets/feedback.png",
+    "title": "Giving the astrologer each update",
+    "description": "We continuously update astrologers on each step of the website design process, ensuring transparency and collaboration. Multiple design revisions are provided to match their vision, resulting in a fresh, modern, and professional online presence that reflects their unique brand and builds trust with visitors."
+  },
+  {
+    "image": "/assets/exp-staff.png",
+    "title": "Skilled Staff with Experience in Astrology",
+    "description": "With the support of a competent, educated, and experienced team of professionals that understand the nuances of creating and developing a successful astrological website, our clients consistently surpass their expectations."
+  }
+]
+
+export const WhatsAppLink= 'https://api.whatsapp.com/send/?phone=+919319924798&text=Hello%20KWIQSOFT,%20I%20want%20website%20design%20&app_absent=0'
