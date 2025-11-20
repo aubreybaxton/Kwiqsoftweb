@@ -15,8 +15,8 @@ function Footer() {
     return (
         <div className='h-64'>
             <FloatingSquaresBackground>
-                <div className='grid grid-cols-5 text-center px-12  text-white h-full'>
-                    <div className='text-left col-span-2 p-4'>
+                <div className='grid grid-col-1 md:grid-cols-5 text-center px-6 md:px-12  text-white h-full'>
+                    <div className='text-left md:col-span-2 p-4'>
                         <h4 className={`text-3xl ${mandatoryPlaything.variable}`}>Kwiqsoft</h4>
                         <div className='text-xl pt-6'>
                             Our business accounting packages are tailored to suit your individual financial requirements and unique business needs.
@@ -38,8 +38,8 @@ function Footer() {
 
                     </div>
                     <div className='text-left'>
-                        <h4 className='text-3xl'> Important Links </h4>
-                        <div className='text-left text-xl pt-6 pl-4'>
+                        <h4 className=' text-2xl md:text-3xl text-bold'> Important Links </h4>
+                        <div className='text-left text-lg md:text-xl pt-6 pl-4'>
                             <div className='hover:underline'><Link href='/about'>About Us</Link></div>
                             <div className='hover:underline'><Link href='/portfolios'>Projects</Link></div>
                             <div className='hover:underline'><Link href='/services'>Services</Link></div>
@@ -48,8 +48,8 @@ function Footer() {
                         </div>
                     </div>
                     <div className='text-left'>
-                        <h4 className='text-3xl'>Featured Services</h4>
-                        <div className='text-left text-xl pl-4 pt-6'>
+                        <h4 className='text-2xl md:text-3xl text-bold'>Featured Services</h4>
+                        <div className='text-left text-lg md:text-xl pl-4 pt-6'>
                             <div className='hover:underline'><Link href='/services'>Web Development</Link></div>
                             <div className='hover:underline'> <Link href='/services'> Android & IOS Development</Link></div>
                             <div className='hover:underline'> <Link href='/services'>Digital Marketing</Link></div>

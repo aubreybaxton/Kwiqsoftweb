@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import { AstrologyCard, AstrologyWebCards, WhatsAppLink } from '@/jsonfile'
+import { AstrologyCard, AstrologyWebCards, WhatsAppLink, AstrologyKwiqsoft, AstrologyKwiqsoft2 } from '@/jsonfile'
 import { Check } from 'lucide-react';
 
 
@@ -9,8 +9,8 @@ import { Check } from 'lucide-react';
 function Astrology() {
     return (
         <div className=' bg-white'>
-            <div className="grid grid-cols-1  bg-[url('/assets/hero-head.gif')] bg-cover bg-center sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                <div className='p-24 text-white'>
+            <div className="grid grid-cols-1  bg-[url('/assets/hero-head.gif')] bg-cover bg-center sm:grid-cols-1 lg:grid-cols-2">
+                <div className='pt-24 p-6 md:p-24 text-white'>
                     <h3 className='text-xl sm:text-xl md:text-2xl lg:text-4xl'>
                         Astrology Website Design & Development Services
                     </h3>
@@ -28,32 +28,33 @@ function Astrology() {
                 </div>
             </div>
             <div className=''>
-                <section className='px-12 pb-10 '>
+                <section className='p-8 md:p-12 pb-10 '>
 
-                    <div className='m-20 p-18 bg-white text-black rounded-lg shadow-xl/30 text-4xl text-center font-extrabold text-capitilize'>
+                    <div className='p-8 bg-white text-black rounded-lg shadow-xl/30 text-xl  text-center font-extrabold text-capitilize md:text-4xl md:p-18'>
                         India's Most Well-Known and Top Astrology Website Design Company
                     </div>
-                    <div className='m-20 p-12 text-4xl bg-blue-600 rounded-lg'>
+                    <br/>
+                    <div className='p-8 text-center text-xl bg-blue-600 rounded-lg md:text-4xl md:p-18'>
                         To contact us and place an order for an astrological website design,click here.
 
                     </div>
-                    <article className='flex justify-center gap-12'>
+                    <article className='md:flex justify-center gap-12'>
                         {AstrologyCard.map((data) => (
                             <div key={data.title} className='w-auto shadow-2xl p-6 text-2xl text-black rounded-lg hover:scale-105 
     transition delay-150 duration-300 ease-in-out' >
 
                                 <div >
-                                    <Image src={data.cover_image} alt={data.title} width={400} height={250} className='rounded-lg bg-cover' />
+                                    <Image src={data.cover_image} alt={data.title} width={400} height={250} className='rounded-lg w-full h-auto bg-cover' />
                                 </div>
                                 <div className='flex p-2'>
                                     <div className='text-center  text-2xl'>
-                                        <Image src={data.avatar} alt={data.title} width={parseInt(data.width)} height={40} className='rounded-lg' />
+                                        <Image src={data.avatar} alt={data.title} width={parseInt(data.width)} height={40} className='rounded-lg w-full h-auto bg-cover' />
                                     </div>
                                     <div className='pl-4'>{data.title}</div>
 
                                 </div>
-                                <div className='flex gap-24'>
-                                    <div className='text-lg'>{data.description}</div>
+                                <div className='sm:flex gap-10'>
+                                    <div className='text-lg mb-2'>{data.description} </div>
 
                                     <Link href={data.actions.link} className='text-white bg-green-500 p-2 rounded-lg hover:bg-green-800'> {data.actions.label}</Link>
                                 </div>
@@ -61,11 +62,11 @@ function Astrology() {
                         ))}
                     </article>
                 </section>
-                <section className="px-12 bg-[url('/assets/astro-bg.jpg')]">
-                    <div className='flex gap-5 p-6'>
-                        <div className='flex-1'>
-                            <h4 className='text-4xl text-center'>Manage your astrological consulting business.</h4>
-                            <div className='p-4 text-xl'>
+                <section className="px-6 md:px-12 text-white bg-[url('/assets/astro-bg.jpg')]">
+                    <div className='md:flex gap-5 p-4 md:p-6'>
+                        <div className='flex-1 pb-4'>
+                            <h4 className=' text-2xl md:text-4xl text-center'>Manage your astrological consulting business.</h4>
+                            <div className='p-4 text-lg'>
                                 As time has gone on, astrological websites have gone online, much like any other business in the modern world. People who are looking for astrological remedies will consult online and call their astrologers. They even enjoy chatting and scheduling sessions with their preferred astrologer online. Online payments are also made. Therefore, we can assist you in going online with our responsive and mobile-friendly websites if you are still operating your astrological centre in an antiquated manner. This will make you more accessible. In the ecology of Indian astrological websites, as well as in online astrology globally, there has been a subtle shift. Numerous Indian and international astrologers have made online astrology their primary business strategy.
                                 <br />
                                 <br />
@@ -76,7 +77,7 @@ function Astrology() {
                             </div>
                         </div>
                         <div className='flex-1 bg-yellow-500 p-6 rounded-xl'>
-                            <h4 className='text-4xl'>Facts and numbers from an astrological website</h4>
+                            <h4 className='text-2xl md:text-4xl'>Facts and numbers from an astrological website</h4>
                             <div>Horoscopes and astrology are currently the two most sought topics on the internet.</div>
                             <ul className='list-disc'>
                                 <li>Over 70 million people in the U.S. read their horoscopes regularly, making astrology content a top driver of engagement on lifestyle websites.</li>
@@ -91,17 +92,17 @@ function Astrology() {
                         </div>
                     </div>
                 </section>
-                <section className='bg-white p-12'>
+                <section className='bg-white p-6 md:p-12'>
                     <div className='text-center'>
-                        <div className='text-4xl bg-yellow-500 p-4 rounded-lg'>Astrologers' website design and development services. Get the Best Website for Astrology Right Now!</div>
-                        <div>Over 1000+ astrology websites have been created by us in the past, all of them are meticulously crafted to meet the specific demands and specifications of our domestic and foreign astrologers. Astrology website design firm with an entire staff dedicated to providing astrological services and use modern server side frameworks!</div>
+                        <div className='text-xl md:text-4xl bg-yellow-500 p-4 rounded-lg'>Astrologers' website design and development services. Get the Best Website for Astrology Right Now!</div>
+                        <div className='text-black p-4'>Over 1000+ astrology websites have been created by us in the past, all of them are meticulously crafted to meet the specific demands and specifications of our domestic and foreign astrologers. Astrology website design firm with an entire staff dedicated to providing astrological services and use modern server side frameworks!</div>
                     </div>
-                    <div className='flex gap-8 p-4'>
+                    <div className='md:flex gap-4 p-2 md:p-4'>
                         {
                             AstrologyWebCards?.map((data) => (
-                                <div key={data.title} className='flex-1 shadow-2xl p-6 text-2xl text-black rounded-lg hover:scale-105 transition delay-150 duration-300 ease-in-out' >
+                                <div key={data.title} className='flex-1  w-auto shadow-2xl p-6  text-xl md:text-2xl text-black rounded-lg hover:scale-105 transition delay-150 duration-300 ease-in-out' >
                                     <div className='bg-cover'>
-                                        <Image src={data.image} alt={data.title} width={400} height={250} className='rounded-lg ' />
+                                        <Image src={data.image} alt={data.title} width={400} height={250} className='rounded-lg w-full h-auto bg-cover ' />
                                     </div>
                                     <div className='pl-4'>{data.title}</div>
                                     <div className='text-lg'>{data.description}</div>
@@ -111,16 +112,16 @@ function Astrology() {
 
                     </div >
                     <article className='p-4'>
-                        <div className='text-4xl text-center bg-yellow-500 p-4 rounded-lg'>Why Is a User-Friendly and Responsive Website Important for Astrologers?</div>
+                        <div className='text-2xl md:text-4xl text-center bg-yellow-500 p-4 rounded-lg'>Why Is a User-Friendly and Responsive Website Important for Astrologers?</div>
 
-                        <div className='text-xl p-8'>With over 198 million internet users, India is now the third-largest online marketing hub in the world. This rapid digital expansion presents a golden opportunity for both Indian astrologers looking to grow their presence and international astrologers aiming to tap into a thriving and engaged market. Many astrology website owners in India are already experiencing fast-paced growth, signaling a strong demand for online astrology services across the globe.
+                        <div className='text-xl p-4 sm:p-8 text-black'>With over 198 million internet users, India is now the third-largest online marketing hub in the world. This rapid digital expansion presents a golden opportunity for both Indian astrologers looking to grow their presence and international astrologers aiming to tap into a thriving and engaged market. Many astrology website owners in India are already experiencing fast-paced growth, signaling a strong demand for online astrology services across the globe.
                         </div>
 
                     </article>
-                    <article className='flex gap-8 p-8'>
-                        <div className='flex-1 shadow-2xl p-6 text-2xl text-black rounded-lg hover:scale-105 transition delay-150 duration-300 ease-in-out' >
+                    <article className='sm:flex justify-center gap-8 p-6'>
+                        <div className='flex-1 shadow-2xl p-4 text-2xl text-black rounded-lg hover:scale-105 transition delay-150 duration-300 ease-in-out' >
 
-                            <div className='pl-4 text-center'>Best Astrology Design Website</div>
+                            <div className='text-center'>Best Astrology Design Website</div>
 
                             <div className='text-lg p-4'>
                                 <ul>
@@ -131,12 +132,12 @@ function Astrology() {
                                 </ul>
                             </div>
                             <div className='pt-4'>
-                                <Link href={WhatsAppLink} className='bg-green-500 p-4 rounded-xl'> Start Chatting, Click here</Link>
+                                <Link href={WhatsAppLink} className='bg-green-500 p-3 text-lg rounded-xl'> Start Chatting, Click here</Link>
                             </div>
                         </div>
                         <div className='flex-1  shadow-2xl p-6 text-2xl text-black rounded-lg hover:scale-105 transition delay-150 duration-300 ease-in-out' >
 
-                            <div className='pl-4 text-center'>Astrology Website Development</div>
+                            <div className='text-center'>Astrology Website Development</div>
                             <div className='text-lg p-4'>
                                 <ul>
                                     <li className='flex'><Check /> Make your clients aware of your offerings.</li>
@@ -148,54 +149,96 @@ function Astrology() {
                                 </ul>
                             </div>
                             <div className='pt-4 '>
-                                <Link href={WhatsAppLink} className='bg-yellow-500 p-4 rounded-xl'> Contact Us Click here</Link>
+                                <Link href={WhatsAppLink} className='bg-yellow-500 p-3 text-lg rounded-xl'> Contact Us Click here</Link>
                             </div>
                         </div>
                     </article>
                 </section >
-                <section className="px-12 bg-[url('/assets/astro-bg.jpg')]">
-                    <div className='text-center text-4xl py-4 sm:text-xl md:text-2xl'>
+                <section className=" p-6 md:px-12 bg-[url('/assets/astro-bg.jpg')]">
+                    <div className='text-center text-white text-2xl md:text-4xl py-4 sm:text-xl md:text-2xl'>
                         What Qualifies KWIQSOFT as India's Top Astrology Website Design Agency?
                     </div>
                     <div>
-                    <article className='flex flex-col  gap-8 p-8 text-white md:flex-row md:p4'>
-                        <div className='flex-1 shadow-2xl p-6 text-2xl border rounded-lg ' >
+                        <article className='flex flex-col  gap-8  text-white md:flex-row md:p-4'>
+                            <div className='flex-1 shadow-2xl p-6 text-2xl border rounded-lg ' >
 
-                            <div className='pl-4 text-center'>Best Astrology Design Website</div>
+                                <div className='pl-4 text-center'>Best Astrology Design Website</div>
 
-                            <div className='text-lg p-4'>
-                                <ul className='list-disc'>
-                                    <li>Free Website Hosting</li>
-                                    <li> Free Domain</li>
-                                    <li> Free 6th Maintenance </li>
-                                    <li> Free Multiple Website Changes</li>
-                                    <li> Free Unlimited Support</li>
-                                </ul>
+                                <div className='text-lg p-4'>
+                                    <ul className='list-disc'>
+                                        <li>Free Website Hosting</li>
+                                        <li> Free Domain</li>
+                                        <li> Free 6th Maintenance </li>
+                                        <li> Free Multiple Website Changes</li>
+                                        <li> Free Unlimited Support</li>
+                                    </ul>
+                                </div>
+                                <div className='pt-4 '>
+                                    <Link href={WhatsAppLink} className='bg-yellow-300 p-3 text-lg rounded-xl'> Contact Us Click here</Link>
+                                </div>
                             </div>
-                            <div className='pt-4 '>
-                                <Link href={WhatsAppLink} className='bg-yellow-300 p-4 rounded-xl'> Contact Us Click here</Link>
-                            </div>
-                        </div>
-                        <div className='flex-1  shadow-2xl p-6 text-2xl border rounded-lg' >
+                            <div className='flex-1 shadow-2xl p-6 text-2xl border rounded-lg' >
 
-                            <div className='pl-4 text-center'>Astrology Website Development</div>
-                            <div className='text-lg p-4'>
-                            Best Offers provided by KWIQSOFT
-                                <ul className='list-disc'>
-                                    <li>Using the newest, most advanced web frameworks</li>
-                                    <li>We stay current with UX, UI, and web design trends.</li>
-                                    <li>Our websites are user-friendly and responsive</li>
-                                    <li>Affordable Astrology Design Options</li>
-                                    <li>Digital Promotion for Websites in Astrology</li>
-                                </ul>
+                                <div className='pl-4 text-center'>Astrology Website Development</div>
+                                <div className='text-lg p-4'>
+                                    Best Offers provided by KWIQSOFT
+                                    <ul className='list-disc'>
+                                        <li>Using the newest, most advanced web frameworks</li>
+                                        <li>We stay current with UX, UI, and web design trends.</li>
+                                        <li>Our websites are user-friendly and responsive</li>
+                                        <li>Affordable Astrology Design Options</li>
+                                        <li>Digital Promotion for Websites in Astrology</li>
+                                    </ul>
+                                </div>
+                                <div className='pt-4 '>
+                                    <Link href={WhatsAppLink} className='bg-green-800 p-3 text-lg rounded-xl'> Contact Us Click here</Link>
+                                </div>
                             </div>
-                            <div className='pt-4 '>
-                                <Link href={WhatsAppLink} className='bg-green-800 p-4 rounded-xl'> Contact Us Click here</Link>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
 
                     </div>
+
+                </section>
+                <section>
+                    <article className='text-black p-6 md:p-12'>
+                        <div className='text-center text-2xl py-4  md:text-4xl'>
+                            We Provide Internet Marketing and Website Design Services to Astrologers All Over the World..
+                        </div>
+                        <div>
+                            The top astrological website design firm in India, KWIQSOFT, offers a comprehensive range of web-based and mobile-based services to astrologers all over the world. Therefore, if you want to create the greatest astrological website in India, you've come to the perfect location.
+                        </div>
+                        <div className='md:flex gap-8 justify-center '>
+                            {AstrologyKwiqsoft?.map((data) => (
+                                <div key={data.image} className='w-auto flex-1  p-8 shadow-lg text-black rounded-xl'>
+                                    <div><Image alt='images' src={data.image} width={240} height={80} className=' w-full h-auto bg-cover rounded-lg' /></div>
+                                    <div className='text-center text-xl'>{data.title}</div>
+                                    <div>{data.list?.map((list, index) => (
+                                        <ul key={index} className='list-disc pl-4'>
+                                            <li>{list}</li>
+                                        </ul>
+                                    ))}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </article>
+                </section>
+                <section className='p-6 md:p-12 text-black'>
+                    <div className='text-xl md:text-4xl text-center'>
+                    For many forms of astrology, we offer website design services for astrologers
+                    </div>
+                    <div className='md:flex gap-8 justify-center '>
+                            {AstrologyKwiqsoft2?.map((data) => (
+                                <div key={data.image} className='w-auto flex-1  p-8 shadow-lg text-black rounded-xl'>
+                                    <div><Image alt='images' src={data.image} width={240} height={80} className=' w-full h-auto bg-cover rounded-lg' /></div>
+                                    <div className='text-center text-xl'>{data.title}</div>
+                                    <div>{data.list2?.map((list, index) => (
+                                        <ul key={index} className='list-disc pl-4'>
+                                            <li>{list}</li>
+                                        </ul>
+                                    ))}</div>
+                                </div>
+                            ))}
+                        </div>
                 </section>
             </div>
         </div >

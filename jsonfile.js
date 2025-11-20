@@ -502,3 +502,138 @@ export const AstrologyWebCards=[
 ]
 
 export const WhatsAppLink= 'https://api.whatsapp.com/send/?phone=+919319924798&text=Hello%20KWIQSOFT,%20I%20want%20website%20design%20&app_absent=0'
+
+export const AstrologyKwiqsoft= [
+  {
+    "image": "/assets/d-1.png",
+    "title": "Design Solutions by KWIQSOFT",
+    "list": [
+      "Design of Astrologer Logos",
+      "Design of Astrologer Banners",
+      "Design of Astrologer Websites",
+      "Design of an Astrologer's Visiting Card",
+      "Design of Astrologer Flyers",
+      "Design of the Astro Logo",
+      "Design of Expert Astrologer Visiting Cards",
+      "Development of Astrologer Apps",
+      "Development of Mobile Apps for Astrologers",
+      "Using Astrology to Design Visiting Cards",
+      "Business Card for an Astrologer",
+      "The Best Website Design for Online Horoscopes",
+      "India's Astrology Design Services"
+    ],
+    "cta": {
+      "text": "Contact Us!",
+      "link": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+    }
+  },
+  {
+    "image": "/assets/d-2.png",
+    "title": "Design Solutions by KWIQSOFT",
+    "list": [
+      "Design of Astrology Banners",
+      "AdWords on Google for Astrologers",
+      "Astrologers' SEO",
+      "Promotion of Astrologers on Google",
+      "Astrologers' Facebook Marketing",
+      "Astrologers' Instagram Marketing",
+      "Astrologers' Facebook Marketing",
+      "Design of Horoscope Websites",
+      "Websites Dedicated to Astrology",
+      "Websites Dedicated to Astrology",
+      "Astrology Poster Design",
+      "Astrology Website Ranking",
+      "Top Astrology Solutions"
+    ],
+    "cta": {
+      "text": "Contact Us!",
+      "link": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+    }
+  },
+  {
+    "image": "/assets/d-3.png",
+    "title": "Design Solutions by KWIQSOFT",
+    "list": [
+      "Astrologers' PPC",
+      "Marketing on Social Media for Astrologers",
+      "Internet Promotion for Astrologers",
+      "Websites for Indian Astrology",
+      "Websites for Vedic Astrology",
+      "Astrologers' Digital Marketing",
+      "Online Promotion for Astrologers",
+      "Banner, Visiting Card, and Website Design for Uranian Astrology",
+      "Banner, Visiting Card, and Website Design for Horary Astrology",
+      "Website Design, Visiting Card, and Banner for Natal Astrology",
+      "Website design for Black Magic",
+      "Website design for African Astrology",
+      "Website design for Clairvoyant"
+    ],
+    "cta": {
+      "text": "Contact Us!",
+      "link": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+    }
+  }
+]
+
+export const AstrologyKwiqsoft2= [
+  {
+    "title": "Design Solutions by KWIQSOFT",
+    "image": "/assets/w1.png",
+    "list2": [
+      "Design of Astrology Banners",
+      "AdWords on Google for Astrologers",
+      "Astrologers' SEO",
+      "Promotion of Astrologers on Google",
+      "Astrologers' Facebook Marketing",
+      "Astrologers' Instagram Marketing",
+      "Astrologers' Facebook Marketing",
+      "Design of Horoscope Websites",
+      "Websites Dedicated to Astrology",
+      "Websites Dedicated to Astrology",
+      "Astrology Poster Design",
+      "Astrology Website Ranking",
+      "Top Astrology Solutions"
+    ],
+    "contact": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+  },
+  {
+    "title": "Design Solutions by KWIQSOFT",
+    "image": "/assets/w2.png",
+    "list2": [
+      "Astrologers' PPC",
+      "Marketing on Social Media for Astrologers",
+      "Internet Promotion for Astrologers",
+      "Websites for Indian Astrology",
+      "Websites for Vedic Astrology",
+      "Astrologers' Digital Marketing",
+      "Online Promotion for Astrologers",
+      "Banner, Visiting Card, and Website Design for Uranian Astrology",
+      "Banner, Visiting Card, and Website Design for Horary Astrology",
+      "Website Design, Visiting Card, and Banner for Natal Astrology",
+      "Website design for Black Magic",
+      "Website design for African Astrology",
+      "Website design for Clairvoyant"
+    ],
+    "contact": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+  },
+  {
+    "title": "Design Solutions by KWIQSOFT",
+    "image": "/assets/w3.png",
+    "list2": [
+      "Astrologers' PPC",
+      "Marketing on Social Media for Astrologers",
+      "Internet Promotion for Astrologers",
+      "Websites for Indian Astrology",
+      "Websites for Vedic Astrology",
+      "Astrologers' Digital Marketing",
+      "Online Promotion for Astrologers",
+      "Banner, Visiting Card, and Website Design for Uranian Astrology",
+      "Banner, Visiting Card, and Website Design for Horary Astrology",
+      "Website Design, Visiting Card, and Banner for Natal Astrology",
+      "Website design for Black Magic",
+      "Website design for African Astrology",
+      "Website design for Clairvoyant"
+    ],
+    "contact": "https://api.whatsapp.com/send/?phone=+919319924798&text=Hello KWIQSOFT, I want website design &app_absent=0"
+  }
+]

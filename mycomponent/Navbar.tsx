@@ -117,6 +117,11 @@ function Navbar() {
                         <Link href={"/blog"} className={`${IsActive("/blog") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
                             }`}>Blog</Link>
                     </li>
+                    <li className='text-xl text-white'>
+                        <Link href={"/contact"} className={`${IsActive("/contact") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            }`}>Contact</Link>
+                    </li>
+                    
 
                 </ul>
             </div>

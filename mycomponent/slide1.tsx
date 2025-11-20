@@ -6,13 +6,13 @@ function Slide1() {
     return (
         <div className=' grid grid-cols-1 lg:grid-cols-2 gap-5 p-6 md:px-16 place-items-center h-screen  '>
             <div className='m-4 text-white' >
-                <div className={`text-3xl md:text-4xl lg:text-5xl pt-20 ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
+                <div className={`text-3xl md:text-4xl lg:text-5xl  md:pt-20 ${poppins.className}`} data-aos="fade-right">Digital Marketing</div>
                 <div className='text-xl p-4' data-aos="fade-right">
                     The right digital marketing solutions can take your business to new heights. Our digital marketing strategy includes content marketing, SEO, social media campaign and more.
                 </div>
             </div>
-            <div className='items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 777.597 680.592">
+            <div className='flex items-center justify-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-96 md:w-[500px] h-auto" viewBox="0 0 777.597 720.592">
                     <g id="digi_mar" transform="translate(-27.5 -23.89)" data-aos="fade-left">
                         <g id="freepik--background-complete--inject-78" transform="translate(58.734 23.89)" data-aos="fade-left">
                             <path id="Path_6209" data-name="Path 6209" d="M154.273,162.3h0a52.223,52.223,0,0,1-52.223-52.223h0A52.223,52.223,0,0,1,154.273,57.85h0A52.223,52.223,0,0,1,206.5,110.073h0A52.223,52.223,0,0,1,154.273,162.3Z" transform="translate(-19.645 -6.084)" fill="#7c4dff"></path>
