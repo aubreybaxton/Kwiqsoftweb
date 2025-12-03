@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from 'next/image'
 import { roboto } from '@/app/font';
@@ -12,12 +13,21 @@ import { PortfoliosJson, ServicesJson } from '../jsonfile.js'
 
 
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     const pathname = usePathname()
     const currentRoute = pathname;
 
     const IsActive = (path: string) => currentRoute === path;
     return (
-        <div className="navbar bg-violet-700 shadow-sm px-12 font-sans md:font-serif z-50 fixed top-0 left-0 ">
+        <div className={`navbar bg-violet-700 px-12 font-sans md:font-serif z-50 fixed top-0 left-0 ${scrolled ? "bg-white/90 backdrop-blur-md shadow" : "bg-transparent"}`}>
             <div className="navbar-start">
 
                 <Link href={"/"} className={`text-xl  `}>
@@ -121,7 +131,7 @@ function Navbar() {
                         <Link href={"/contact"} className={`${IsActive("/contact") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
                             }`}>Contact</Link>
                     </li>
-                    
+
 
                 </ul>
             </div>

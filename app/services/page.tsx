@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+//import mandatoryPlaything from '@/fonts/mandatory_plaything/';
 import { ServicesSection, ServicesStep } from '@/jsonfile';
 import Industry from '@/mycomponent/Industry';
 import Contactus from '@/mycomponent/contactus';
@@ -19,13 +20,13 @@ function Services() {
             We help our partners accelerate disruption both within their organizations and industries.They strategize new ideas and obtain real business value by getting the most out of our production-ready custom software development services. Talk to our experts today!
           </div>
         </div>
-        <div className='flex-1 bg-center'>
-          <Image src={'assets/ser_vec.svg'} alt='cross' height={200} width={450} />
+        <div className='flex-1 '>
+          <Image src={'assets/ser_vec.svg'} alt='cross' className='mx-auto' height={200} width={450} />
         </div>
       </section>
       </FloatingSquaresBackground>
       <section className='h-80 p-12'>
-        <div className='text-center text-black text-5xl p-16 border-y-4 border-violet-200'> Our Services</div>
+        <div className={`text-center text-black text-5xl p-16 border-y-4 border-violet-200 `}> Kwiqsoft Services</div>
       </section>
       <section>
         {ServicesSection?.map((data) => (
@@ -52,7 +53,6 @@ function Services() {
             <Image src={'/assets/BlueArrow.png'} alt='bluearrow' height={24} width={40} />
           </div>
           <div className='text-xl pt-4'>We exactly know how to transform your business with our multi-disciplinary team, Which we assure Security, Prosperity, Guarantee, Quality that combines world-class software development.
-
           </div>
           <div className="flex justify-end mr-10">
             <Image

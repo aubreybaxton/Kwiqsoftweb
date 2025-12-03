@@ -17,7 +17,7 @@ export const roboto = Roboto({
 export const mandatoryPlaything = localFont({
   src: [
     {
-      path: "./font/mandatory_plaything/Mandatory Plaything.otf",
+      path: "../public/font/mandatory_plaything/MandatoryPlaything.otf",
       weight: "400",
       style: "normal",
     }
