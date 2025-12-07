@@ -137,8 +137,6 @@ function Navbar() {
                         <Link href={"/contact"} className={`${scrolled ? 'text-black' : 'text-white'} ${IsActive("/contact") ? "border-b-2 border-red-500 " : ""
                             }`}>Contact</Link>
                     </li>
-
-
                 </ul>
             </div>
             <div className="navbar-end">
