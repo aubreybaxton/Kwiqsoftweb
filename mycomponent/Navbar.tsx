@@ -13,6 +13,7 @@ import { PortfoliosJson, ServicesJson } from '../jsonfile.js'
 
 
 function Navbar() {
+
     const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -22,31 +23,36 @@ function Navbar() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     const pathname = usePathname()
     const currentRoute = pathname;
 
     const IsActive = (path: string) => currentRoute === path;
     return (
-        <div className={`navbar bg-violet-700 px-12 font-sans md:font-serif z-50 fixed top-0 left-0 ${scrolled ? "bg-white/90 backdrop-blur-md shadow" : "bg-transparent"}`}>
+        <div className={`navbar bg-violet-700 px-12 font-sans md:font-serif   ${scrolled ? " z-50 bg-white/90 backdrop-blur-md text-black fixed top-0 left-0 shadow transition-all duration-300" : "bg-transparent shadow-none"}`}>
             <div className="navbar-start">
 
                 <Link href={"/"} className={`text-xl  `}>
-                    <Image src="/assets/wlogo.png" alt="logo" width={80} height={48} />
+                    {
+                        scrolled ? <Image src="/assets/blogo.png" alt="logo" width={80} height={48} /> :
+                            <Image src="/assets/wlogo.png" alt="logo" width={80} height={48} />
+                    }
+
                 </Link>
             </div>
             <div className={`navbar-center hidden lg:flex text-xl text-white ${roboto.className}`}>
                 <ul className="menu menu-horizontal px-1">
                     <li className='text-xl'>
-                        <Link href={"/"} className={`text-xl ${IsActive("/") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                        <Link href={"/"} className={`text-xl ${scrolled ? 'text-black' : 'text-white'} ${IsActive("/") ? "border-b-2 border-red-500 " : ""
                             }`}> Home</Link>
                     </li>
                     <li className='text-xl'>
                         <div className="relative group inline-block">
                             <div className={`flex gap-2 items-center ${IsActive("/services") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
                                 }`}>
-                                <Link href={"/services"} className={`text-white rounded space-x-2 group `}> Services</Link>
+                                <Link href={"/services"} className={`${scrolled ? 'text-black' : 'text-white'} rounded space-x-2 group `}> Services</Link>
                                 <svg
-                                    className="w-4 h-4 transition-transform duration-300 origin-center group-hover:rotate-180"
+                                    className={`${scrolled ? 'text-black' : 'text-white'} w-4 h-4 transition-transform duration-300 origin-center group-hover:rotate-180`}
                                     fill="none"
                                     stroke="currentColor"
                                     strokeWidth="2"
@@ -81,9 +87,9 @@ function Navbar() {
 
                     <li className='text-xl'>
                         <div className="relative group inline-block">
-                            <div className={`flex gap-2 items-center text-white ${IsActive("/portfolios") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                            <div className={`flex gap-2 items-center ${scrolled ? 'text-black' : 'text-white'} ${IsActive("/portfolios") ? "border-b-2 border-red-500 text-white" : ""
                                 }`}>
-                                <Link href={"/portfolios"} className={`text-white rounded space-x-2 group `}> Portfolios</Link>
+                                <Link href={"/portfolios"} className={`${scrolled ? 'text-black' : 'text-white'} rounded space-x-2 group `}> Portfolios</Link>
                                 <svg
                                     className="w-4 h-4 transition-transform duration-300 origin-center group-hover:rotate-180 align-middle"
                                     fill="none"
@@ -115,20 +121,20 @@ function Navbar() {
 
                         </div>
                     </li>
-                    <li className='text-xl text-white'>
-                        <Link href={"/astrology"} className={`${IsActive("/astrology") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                    <li className='text-xl '>
+                        <Link href={"/astrology"} className={`${scrolled ? 'text-black' : 'text-white'} ${IsActive("/astrology") ? "border-b-2 border-red-500 text-white" : ""
                             }`}>Astrology Website Design</Link>
                     </li>
-                    <li className='text-xl text-white'>
-                        <Link href={"/tech"} className={`${IsActive("/tech") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                    <li className='text-xl'>
+                        <Link href={"/tech"} className={`${scrolled ? 'text-black' : 'text-white'} ${IsActive("/tech") ? "border-b-2 border-red-500 " : ""
                             }`}>Tech</Link>
                     </li >
-                    <li className='text-xl text-white'>
-                        <Link href={"/blog"} className={`${IsActive("/blog") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                    <li className='text-xl '>
+                        <Link href={"/blog"} className={`${scrolled ? 'text-black' : 'text-white'} ${IsActive("/blog") ? "border-b-2 border-red-500 " : ""
                             }`}>Blog</Link>
                     </li>
                     <li className='text-xl text-white'>
-                        <Link href={"/contact"} className={`${IsActive("/contact") ? "border-b-2 border-red-500 text-white" : "text-white hover:text-white"
+                        <Link href={"/contact"} className={`${scrolled ? 'text-black' : 'text-white'} ${IsActive("/contact") ? "border-b-2 border-red-500 " : ""
                             }`}>Contact</Link>
                     </li>
 
@@ -136,7 +142,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn  btn-outline align-middle btn-error border-2 text-lg text-white hidden sm:block">Contact</a>
+                <a className={`${scrolled ? 'bg-red-500 text-white' : 'text-white'} btn btn-outline align-middle btn-error border-2 text-lg hidden sm:block`}>Contact</a>
                 <button className='btn sm:hidden'><PhoneCall /></button>
 
                 <div className="dropdown dropdown-end">
