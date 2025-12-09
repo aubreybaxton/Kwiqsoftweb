@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.12",
     "aos": "^2.3.4",
+    "axios": "^1.13.2",
     "daisyui": "^5.3.9",
     "lucide-react": "^0.552.0",
     "next": "^16.0.7",
@@ -17,10 +19,12 @@
     "react-dom": "19.2.0",
     "react-hook-form": "^7.68.0",
     "react-icons": "^5.5.0",
+    "sonner": "^2.0.7",
     "swiper": "^12.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tanstack/react-devtools": "^0.8.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
