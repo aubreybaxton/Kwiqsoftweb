@@ -3,7 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 
 export const useLogin = () => {
   return useMutation({
-    mutationFn: ({formData}:{formData:FormData})=>postData('/auth/login', formData),
+    mutationFn: ({formData}:{formData:FormData})=>postData('/login', formData),
     onSuccess: (data) => {
         console.log(data)
     },
